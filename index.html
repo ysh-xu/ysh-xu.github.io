@@ -542,7 +542,7 @@
       max-width: 74ch;
       margin: 7px 0 0;
       color: var(--muted);
-      font-size: 0.9rem;
+      font-size: 0.82rem;
       line-height: 1.55;
     }
 
@@ -1482,7 +1482,7 @@
       margin-top: 14px;
       color: var(--muted);
       font-family: var(--font-sans);
-      font-size: 0.9rem;
+      font-size: 0.82rem;
       font-weight: 500;
       line-height: 1.55;
       letter-spacing: 0;
@@ -1533,7 +1533,7 @@
       padding: 8px 10px;
       border-radius: 5px;
       font-family: var(--font-sans);
-      font-size: 0.9rem;
+      font-size: 0.82rem;
       font-weight: 500;
       letter-spacing: 0;
       text-transform: none;
@@ -1785,8 +1785,24 @@
 
     .awards-list .entry-meta {
       margin-top: 2px;
-      font-size: 0.78rem;
-      line-height: 1.4;
+      font-size: 0.82rem;
+      line-height: 1.52;
+    }
+
+    /* Keep supporting information at one consistent typographic level. */
+    .entry-meta,
+    .awards-list .entry-meta,
+    .conference-list .entry-meta,
+    .service-compact .entry-meta,
+    .conference-topic-list .entry-meta {
+      font-family: var(--font-sans);
+      font-size: 0.82rem;
+      font-weight: 400;
+      line-height: 1.52;
+    }
+
+    .awards-list .entry-meta.award-project {
+      margin-top: 4px;
     }
 
     .awards-list .date {
@@ -1801,10 +1817,10 @@
       filter: saturate(0.7);
     }
 
-    .publication-groups { gap: 34px; }
+    .publication-groups { gap: 22px; }
 
     .publication-group + .publication-group {
-      padding-top: 34px;
+      padding-top: 22px;
       border-top-color: var(--rule-strong);
     }
 
@@ -1906,9 +1922,10 @@
       letter-spacing: 0;
     }
 
-    .paper-links { margin-top: 13px; }
+    .paper-links { margin-top: 10px; }
 
     .paper-link {
+      border-bottom: 0;
       border-radius: 0;
       font-size: 0.72rem;
       font-weight: 500;
