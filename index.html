@@ -1,0 +1,2469 @@
+<!DOCTYPE html>
+
+<html data-theme="light" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<meta content="light dark" name="color-scheme"/>
+    <title>Yushu Xu — Academic Homepage</title>
+    <!-- Enhanced SEO and social sharing metadata -->
+    <meta property="og:title" content="Yushu Xu — GIScience, Human Mobility &amp; Urban AI"/>
+    <meta property="og:description" content="Yushu Xu's academic homepage on GIScience, spatial interaction, travel behavior, digital geographies and Urban AI."/>
+<meta property="og:image" content="portrait.JPG"/>
+    <meta property="og:type" content="profile"/>
+    <meta name="twitter:card" content="summary_large_image"/>
+    <!-- Structured data for rich snippets -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Yushu Xu",
+      "image": "portrait.JPG",
+      "jobTitle": "Graduate Student",
+      "affiliation": {
+        "@type": "CollegeOrUniversity",
+        "name": "Peking University"
+      },
+      "alumniOf": {
+        "@type": "CollegeOrUniversity",
+        "name": "Nanjing Normal University"
+      },
+      "knowsAbout": ["GIScience","Spatial interaction","Human mobility","Travel behavior","Digital geographies","Urban AI","Large language models"],
+      "sameAs": [
+        "mailto:xuyushu@stu.pku.edu.cn",
+        "https://scholar.google.com/citations?hl=zh-CN&amp;user=qJTbbKkAAAAJ",
+        "https://www.linkedin.com/in/yushu-xu-751778384/"
+      ],
+      "description": "Master’s student at the School of Urban Planning and Design, Peking University, researching GIScience, human mobility, digital geographies, and Urban AI."
+    }
+    </script>
+<meta content="Academic homepage of Yushu Xu, focusing on GIScience, spatial interaction, human mobility, digital geographies, and Urban AI." name="description"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,500;0,8..60,600;1,8..60,400&amp;display=swap" rel="stylesheet"/>
+
+<style>
+    :root {
+      /* Cool blue-gray field with a single vermilion highlight color */
+      color-scheme: light;
+      --bg: #f3f7fb;
+      --surface: #fbfdff;
+      --surface-soft: #eaf1f7;
+
+      --text: #202832;
+      --muted: #5d6875;
+      --faint: #84909d;
+
+      --accent: #b2432f;
+      --accent-2: #b2432f;
+
+      --rule: #d7e0e9;
+      --rule-strong: #b8c5d2;
+      --radius: 12px;
+
+      /* Callout Box Colors */
+      --callout-bg: #fae9e5;
+      --callout-border: var(--accent-2);
+
+      /* One restrained type pair: editorial serif + neutral sans */
+      --font-serif: "Source Serif 4", Georgia, "Times New Roman", serif;
+      --font-sans: "Inter", "Helvetica Neue", Arial, sans-serif;
+      --font-mono: "Inter", "Helvetica Neue", Arial, sans-serif;
+
+      /* Motion */
+      --ease-out-quart: cubic-bezier(0.25, 1, 0.5, 1);
+
+      /* Layout Dimensions */
+      --page-width: 1240px;
+      --nav-width: 176px;
+      --content-width: 960px;
+    }
+
+    [data-theme="dark"] {
+      color-scheme: dark;
+      --bg: #15191f;
+      --surface: #1c222b;
+      --surface-soft: #252d38;
+      --text: #edf1f5;
+      --muted: #bbc3cc;
+      --faint: #87919d;
+
+      --accent: #ff9581;
+      --accent-2: #ff9581;
+
+      --rule: #323c48;
+      --rule-strong: #4a5766;
+      --callout-bg: color-mix(in srgb, var(--accent-2), transparent 89%);
+    }
+
+    *, *::before, *::after { box-sizing: border-box; }
+
+    html {
+      scroll-behavior: smooth;
+      text-rendering: optimizeLegibility;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      background: var(--bg);
+      color: var(--text);
+      font-family: var(--font-serif);
+      font-size: clamp(0.96rem, 0.92rem + 0.16vw, 1.05rem); /* Compact fluid body type */
+      line-height: 1.52;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    /* Quiet graph-paper field, matching the cool academic reference. */
+    body::before {
+      content: '';
+      position: fixed;
+      inset: 0;
+      z-index: -1;
+      pointer-events: none;
+      background:
+        linear-gradient(90deg, transparent 0 31px, color-mix(in srgb, var(--rule), transparent 68%) 31px 32px, transparent 32px),
+        linear-gradient(180deg, transparent 0 31px, color-mix(in srgb, var(--rule), transparent 76%) 31px 32px, transparent 32px);
+      background-size: 32px 32px;
+    }
+
+    a {
+      color: var(--accent);
+      text-decoration: none;
+      text-underline-offset: 4px;
+      transition: color 250ms var(--ease-out-quart), border-color 250ms var(--ease-out-quart), background-color 250ms var(--ease-out-quart);
+    }
+
+    a:hover {
+      color: var(--accent-2);
+      text-decoration: underline;
+    }
+
+    /* Accessibility Focus Rings */
+    a:focus { outline: none; }
+    button:focus { outline: none; }
+    
+    a:focus-visible,
+    button:focus-visible {
+      outline: 2px solid var(--accent);
+      outline-offset: 2px;
+      border-radius: 4px;
+    }
+
+    .skip-link {
+      /* Visually hidden until focused (accessible skip link) */
+      position: absolute;
+      left: -9999px;
+      top: auto;
+      width: 1px;
+      height: 1px;
+      overflow: hidden;
+      clip: rect(0 0 0 0);
+      clip-path: inset(100%);
+      padding: 8px 12px;
+      background: var(--surface);
+      border: 1px solid var(--rule-strong);
+      color: var(--text);
+      font-family: var(--font-sans);
+      font-size: 0.78rem;
+      font-weight: 650;
+      line-height: 1.35;
+      letter-spacing: 0.015em;
+      white-space: nowrap;
+      border-radius: 8px;
+      z-index: 100;
+    }
+
+    .skip-link:focus {
+      /* When keyboard focused, reveal the skip link at the top left */
+      left: 16px;
+      top: 16px;
+      width: auto;
+      height: auto;
+      overflow: visible;
+      clip: auto;
+      clip-path: none;
+    }
+
+    .layout {
+      display: grid;
+      grid-template-columns: var(--nav-width) minmax(0, var(--content-width));
+      gap: clamp(40px, 5vw, 80px); /* Fluid 4pt spacing */
+      width: min(100%, var(--page-width));
+      margin: 0 auto;
+      padding: 56px 32px;
+    }
+
+    .side-nav {
+      position: sticky;
+      top: 32px;
+      align-self: start;
+      height: calc(100vh - 64px);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      border-right: 1px solid var(--rule-strong);
+      padding-right: 24px;
+    }
+
+    .nav-brand {
+      display: block;
+      color: var(--text);
+      text-decoration: none;
+    }
+
+    .nav-brand:hover { text-decoration: none; }
+
+    .nav-portrait {
+      display: block;
+      width: 108px;
+      aspect-ratio: 1;
+      margin: 0 auto 20px;
+      overflow: hidden;
+      border-radius: 50%;
+      background: var(--surface);
+      padding: 4px;
+      box-shadow:
+        0 0 0 1px var(--rule-strong),
+        0 8px 24px color-mix(in srgb, var(--text), transparent 91%);
+    }
+
+    .nav-portrait img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      object-fit: cover;
+      object-position: center 34%;
+    }
+
+    .brand-name {
+      display: block;
+      font-family: var(--font-serif);
+      font-weight: 600;
+      font-size: clamp(1.25rem, 1.5vw, 1.5rem);
+      line-height: 1.1;
+      letter-spacing: -0.02em;
+      color: var(--text);
+    }
+
+    .brand-meta {
+      display: block;
+      margin-top: 8px;
+      color: var(--muted);
+      font-family: var(--font-sans);
+      font-size: 0.875rem;
+      line-height: 1.4;
+    }
+
+    .brand-affiliation {
+      display: block;
+      margin-top: 10px;
+      color: var(--accent);
+      font-family: var(--font-sans);
+      font-size: 0.78rem;
+      font-weight: 650;
+      line-height: 1.35;
+      letter-spacing: 0.02em;
+    }
+
+    .nav-links {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+      margin-top: 32px;
+      border-top: 1px solid var(--rule);
+      padding-top: 16px;
+    }
+
+    .nav-links a {
+      display: block;
+      padding: 8px 12px;
+      color: var(--muted);
+      font-family: var(--font-sans);
+      text-decoration: none;
+      font-size: 0.9375rem;
+      font-weight: 500;
+      border-radius: 6px;
+    }
+
+    .nav-links a:hover {
+      color: var(--text);
+      background: color-mix(in srgb, var(--surface-soft), transparent 18%);
+    }
+
+    .nav-links a.is-active {
+      color: var(--accent);
+      border-left: 2px solid var(--accent);
+      background: color-mix(in srgb, var(--accent), transparent 91%);
+      font-weight: 600;
+    }
+
+    .nav-actions {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      color: var(--muted);
+      font-family: var(--font-sans);
+      font-size: 0.875rem;
+    }
+
+    .theme-toggle {
+      width: fit-content;
+      border: 1px solid var(--rule-strong);
+      background: var(--surface);
+      color: var(--text);
+      padding: 8px 12px;
+      cursor: pointer;
+      font-family: var(--font-sans);
+      font-weight: 600;
+      font-size: 0.8125rem;
+      letter-spacing: 0.04em;
+      border-radius: 6px;
+      transition: background 250ms var(--ease-out-quart), border-color 250ms var(--ease-out-quart);
+    }
+
+    .theme-toggle:hover {
+      border-color: var(--accent);
+      background: color-mix(in srgb, var(--accent), transparent 94%);
+    }
+
+    main {
+      min-width: 0;
+      display: flex;
+      flex-direction: column;
+    }
+
+    #about { order: 1; }
+    #research { order: 2; }
+    #experience { order: 3; }
+    .footer { order: 4; }
+
+    .content-section {
+      scroll-margin-top: 32px;
+      margin-top: 36px;
+      border: 1px solid var(--rule);
+      border-radius: var(--radius);
+      background: var(--surface);
+      overflow: hidden;
+      box-shadow:
+        0 10px 30px color-mix(in srgb, var(--text), transparent 94%),
+        0 2px 8px color-mix(in srgb, var(--rule-strong), transparent 72%);
+    }
+
+    .content-section:first-child { margin-top: 0; }
+
+    .section-body { padding: clamp(22px, 3vw, 36px); }
+
+    .intro-layout {
+      display: grid;
+      grid-template-columns: 118px minmax(0, 1fr);
+      gap: clamp(22px, 3vw, 32px);
+      align-items: start;
+    }
+
+    .profile-copy {
+      min-width: 0;
+      max-width: none;
+    }
+
+    .kicker {
+      margin: 0 0 16px;
+      color: var(--muted);
+      font-family: var(--font-sans);
+      font-size: 0.8125rem;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+    }
+
+    .intro-title {
+      margin: 0;
+      max-width: 760px;
+      font-family: var(--font-serif);
+      font-weight: 500;
+      font-size: clamp(1.95rem, 3.5vw, 3.15rem);
+      line-height: 1.04;
+      letter-spacing: -0.03em;
+      color: var(--text);
+    }
+
+    .intro-title span { color: var(--accent); }
+
+    .intro-text {
+      margin: 18px 0 0;
+      max-width: none;
+      color: var(--muted);
+      line-height: 1.58;
+    }
+
+    .profile-copy .intro-text:first-child { margin-top: 0; }
+
+    .intro-emphasis {
+      color: var(--accent);
+      font-weight: 650;
+    }
+
+    .profile-copy .intro-text:nth-of-type(2) .intro-emphasis {
+      color: var(--accent-2);
+    }
+
+    .callout-box {
+      width: 100%;
+      margin-top: 22px;
+      padding: 14px 18px;
+      background: var(--callout-bg);
+      border-left: 4px solid var(--callout-border);
+      border-radius: 0 8px 8px 0;
+      color: var(--text);
+      font-family: var(--font-sans);
+      font-size: 0.92rem;
+      line-height: 1.55;
+    }
+
+    .callout-box strong {
+      color: var(--accent-2);
+      font-weight: 700;
+    }
+
+    .research-thread {
+      margin-top: 28px;
+      padding-top: 22px;
+      border-top: 1px solid var(--rule);
+    }
+
+    .research-thread-head {
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+      gap: 20px;
+      margin-bottom: 14px;
+    }
+
+    .research-thread-title {
+      margin: 0;
+      font-family: var(--font-serif);
+      font-size: 1.08rem;
+      font-weight: 600;
+      line-height: 1.25;
+    }
+
+    .research-thread-note {
+      margin: 0;
+      color: var(--faint);
+      font-family: var(--font-mono);
+      font-size: 0.68rem;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+    }
+
+    .research-lenses {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 10px;
+    }
+
+    .research-lens {
+      min-height: 154px;
+      padding: 14px;
+      border: 1px solid var(--rule);
+      border-radius: 10px;
+      background: color-mix(in srgb, var(--surface-soft), transparent 42%);
+    }
+
+    .research-lens-index {
+      display: block;
+      margin-bottom: 16px;
+      color: var(--accent);
+      font-family: var(--font-mono);
+      font-size: 0.68rem;
+      font-weight: 600;
+      letter-spacing: 0.04em;
+    }
+
+    .research-lens p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 0.86rem;
+      line-height: 1.42;
+    }
+
+    .research-lens strong {
+      display: block;
+      margin-bottom: 3px;
+      color: var(--text);
+      font-family: var(--font-sans);
+      font-size: 0.79rem;
+      font-weight: 650;
+    }
+
+    .research-lens em {
+      color: var(--accent);
+      font-style: normal;
+    }
+
+    .research-overview {
+      display: grid;
+      gap: 0;
+    }
+
+    .research-area {
+      display: grid;
+      grid-template-columns: 124px minmax(0, 1fr);
+      gap: 18px;
+      padding: 22px 0;
+      align-items: start;
+    }
+
+    .research-area:first-child { padding-top: 0; }
+    .research-area:last-child { padding-bottom: 0; }
+    .research-area + .research-area { border-top: 1px solid var(--rule); }
+
+    .research-area-label {
+      margin: 2px 0 0;
+      color: var(--accent);
+      font-family: var(--font-mono);
+      font-size: 0.68rem;
+      font-weight: 600;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+    }
+
+    .research-area h3 {
+      margin: 0;
+      font-family: var(--font-serif);
+      font-size: 1.16rem;
+      font-weight: 600;
+      line-height: 1.3;
+    }
+
+    .research-area p {
+      max-width: 74ch;
+      margin: 7px 0 0;
+      color: var(--muted);
+      font-size: 0.9rem;
+      line-height: 1.55;
+    }
+
+    .portrait-card {
+      width: 118px;
+      aspect-ratio: 1;
+      margin: 0;
+      overflow: hidden;
+      border: 0;
+      border-radius: 50%;
+      background: var(--surface);
+      padding: 3px;
+      box-shadow: 0 0 0 1px color-mix(in srgb, var(--rule-strong), transparent 35%);
+    }
+
+    .portrait {
+      display: block;
+      width: 100%;
+      height: 100%;
+      aspect-ratio: 1;
+      object-fit: cover;
+      object-position: center 34%;
+      border-radius: 50%;
+      background: var(--surface-soft);
+    }
+
+    .contact-strip {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px;
+      margin-top: 28px;
+      padding-top: 20px;
+      border-top: 1px solid var(--rule);
+    }
+
+    .icon-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      color: var(--text);
+      font-family: var(--font-sans);
+      font-size: 0.9375rem;
+      font-weight: 500;
+      text-decoration: none;
+      transition: color 200ms var(--ease-out-quart);
+    }
+
+    .icon-link svg {
+      width: 18px;
+      height: 18px;
+      opacity: 0.8;
+      flex: 0 0 auto;
+      transition: opacity 200ms var(--ease-out-quart);
+    }
+
+    .icon-link:hover {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    .icon-link:hover svg {
+      opacity: 1;
+    }
+
+    .section-head {
+      border-bottom: 1px solid var(--rule);
+      padding: 18px clamp(22px, 3vw, 36px) 16px;
+      background: color-mix(in srgb, var(--surface-soft), var(--surface) 58%);
+      box-shadow: none;
+    }
+
+    .section-title {
+      margin: 0;
+      font-family: var(--font-serif);
+      font-size: clamp(1.35rem, 2.1vw, 1.55rem);
+      font-weight: 600;
+      letter-spacing: -0.02em;
+      line-height: 1.1;
+      color: var(--text);
+    }
+
+    .section-title::after {
+      content: '';
+      display: block;
+      width: 30px;
+      height: 2px;
+      margin-top: 8px;
+      background: var(--accent-2);
+    }
+
+    /* Experience Grid - Optimized for lower cognitive load */
+    .experience-group {
+      display: grid;
+      grid-template-columns: 124px minmax(0, 1fr);
+      gap: 18px;
+      align-items: start;
+      padding: 18px 0;
+    }
+
+    .experience-group:first-child { padding-top: 0; }
+    .experience-group + .experience-group { border-top: 1px solid var(--rule); }
+
+    .group-title {
+      position: sticky;
+      top: 24px;
+      margin: 0;
+      color: var(--accent);
+      font-family: var(--font-sans);
+      font-size: 0.75rem;
+      font-weight: 700;
+      line-height: 1.25;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    .timeline, .plain-list, .pub-list {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    .timeline {
+      display: grid;
+      gap: 14px;
+    }
+
+    .timeline li {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) 132px;
+      gap: 16px;
+      align-items: baseline;
+    }
+
+    .timeline li + li {
+      padding-top: 12px;
+      border-top: 1px solid color-mix(in srgb, var(--rule), transparent 25%);
+    }
+
+    .timeline li > div {
+      grid-column: 1;
+      grid-row: 1;
+      min-width: 0;
+    }
+
+    .timeline li > .date {
+      grid-column: 2;
+      grid-row: 1;
+      text-align: right;
+      justify-self: end;
+    }
+
+    .date {
+      color: var(--muted);
+      font-family: var(--font-sans);
+      font-size: 0.78rem;
+      font-weight: 650;
+      line-height: 1.35;
+      letter-spacing: 0.015em;
+      white-space: nowrap;
+    }
+
+    .entry-title {
+      margin: 0;
+      color: var(--text);
+      font-family: var(--font-serif);
+      font-size: 1.02rem;
+      font-weight: 600;
+      line-height: 1.28;
+    }
+
+    .institution-title {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .school-icon {
+      width: 18px;
+      height: 18px;
+      border-radius: 4px;
+      object-fit: cover;
+      flex: 0 0 auto;
+      box-shadow: 0 0 0 1px color-mix(in srgb, var(--rule-strong), transparent 20%);
+      background: var(--surface-soft);
+    }
+
+
+    .entry-meta {
+      margin: 2px 0 0;
+      color: var(--muted);
+      font-size: 0.88rem;
+      line-height: 1.42;
+    }
+
+    .awards-list {
+      gap: 6px;
+    }
+
+    .awards-list li {
+      position: relative;
+      grid-template-columns: minmax(0, 1fr) 116px;
+      gap: 12px;
+      padding-left: 14px;
+    }
+
+    .awards-list li + li {
+      padding-top: 0;
+      border-top: 0;
+    }
+
+    .awards-list li::before {
+      content: "·";
+      position: absolute;
+      left: 0;
+      top: -0.04em;
+      color: var(--accent);
+      font-family: var(--font-sans);
+      font-size: 1.2rem;
+      font-weight: 700;
+      line-height: 1;
+    }
+
+    .awards-list .entry-title {
+      margin: 0;
+      font-size: 0.98rem;
+      line-height: 1.28;
+    }
+
+    .award-inline {
+      color: var(--muted);
+      font-weight: 400;
+    }
+
+    .award-project {
+      margin-top: 1px;
+      font-family: var(--font-serif);
+      font-size: 0.84rem;
+      line-height: 1.36;
+    }
+
+    .conference-list {
+      gap: 8px;
+    }
+
+    .conference-list li {
+      grid-template-columns: minmax(0, 1fr) 104px;
+      gap: 14px;
+    }
+
+    .conference-list li + li {
+      padding-top: 0;
+      border-top: 0;
+    }
+
+    .conference-list .entry-title {
+      font-size: 0.98rem;
+      line-height: 1.28;
+    }
+
+    .conference-list .entry-meta {
+      margin-top: 1px;
+      font-size: 0.84rem;
+      line-height: 1.36;
+    }
+
+    .conference-place {
+      color: var(--muted);
+      font-weight: 400;
+    }
+
+    .service-compact .entry-title {
+      font-size: 0.98rem;
+      line-height: 1.28;
+    }
+
+    .service-compact .entry-meta {
+      margin-top: 1px;
+      font-size: 0.84rem;
+      line-height: 1.36;
+    }
+
+    .conference-topic-list {
+      gap: 10px;
+    }
+
+    .conference-topic-list > li {
+      grid-template-columns: 1fr;
+    }
+
+    .conference-topic-list .entry-title {
+      max-width: min(76ch, calc(100% - 96px));
+      font-size: 0.98rem;
+      line-height: 1.32;
+    }
+
+    .conference-topic-list .entry-meta {
+      max-width: 90ch;
+      font-size: 0.84rem;
+      line-height: 1.36;
+    }
+
+    .conference-venues {
+      list-style: none;
+      margin: 5px 0 0;
+      padding: 0;
+      display: grid;
+      gap: 3px;
+      color: var(--muted);
+      font-size: 0.84rem;
+      line-height: 1.34;
+    }
+
+    .conference-venues li {
+      position: relative;
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) 82px;
+      gap: 12px;
+      padding-left: 14px;
+      align-items: baseline;
+    }
+
+    .conference-venues li::before {
+      content: "·";
+      position: absolute;
+      left: 0;
+      top: -0.04em;
+      color: var(--accent);
+      font-family: var(--font-sans);
+      font-size: 1.05rem;
+      font-weight: 700;
+      line-height: 1;
+    }
+
+    .venue-date {
+      color: var(--muted);
+      font-family: var(--font-sans);
+      font-size: 0.76rem;
+      font-weight: 650;
+      line-height: 1.3;
+      letter-spacing: 0.01em;
+      text-align: right;
+      white-space: nowrap;
+    }
+
+    .plain-list {
+      display: grid;
+      gap: 6px;
+    }
+
+    .plain-list li {
+      position: relative;
+      color: var(--muted);
+      font-size: 0.88rem;
+      line-height: 1.42;
+      padding-left: 16px;
+    }
+
+    .plain-list li::before {
+      content: "—";
+      position: absolute;
+      left: 0;
+      color: var(--faint);
+    }
+
+    .pub-list {
+      display: flex;
+      flex-direction: column;
+      gap: 0;
+    }
+
+    .publication-groups {
+      display: grid;
+      gap: 22px;
+    }
+
+    .publication-group {
+      --theme-color: var(--accent);
+      position: relative;
+      padding: 0;
+      background: transparent;
+    }
+
+    .publication-group:nth-child(2) {
+      --theme-color: var(--accent-2);
+    }
+
+    .publication-group + .publication-group {
+      border-top: 1px solid var(--rule-strong);
+      padding-top: 22px;
+    }
+
+    .publication-group-head {
+      display: grid;
+      grid-template-columns: 92px minmax(0, 1fr);
+      gap: 22px;
+      margin-bottom: 26px;
+      border-bottom: 1px solid var(--rule);
+      padding-bottom: 22px;
+      align-items: start;
+    }
+
+    .publication-group-head .group-title {
+      position: static;
+      display: grid;
+      gap: 5px;
+      color: var(--theme-color);
+      letter-spacing: 0;
+      text-transform: none;
+    }
+
+    .theme-index {
+      display: block;
+      font-family: var(--font-serif);
+      font-size: 2.35rem;
+      font-weight: 500;
+      line-height: 0.9;
+      letter-spacing: -0.04em;
+    }
+
+    .theme-label {
+      display: block;
+      font-family: var(--font-sans);
+      font-size: 0.64rem;
+      font-weight: 700;
+      line-height: 1.25;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    .publication-group-title {
+      margin: 0;
+      max-width: none;
+      color: var(--text);
+      font-family: var(--font-serif);
+      font-size: clamp(1.3rem, 2.2vw, 1.55rem);
+      font-weight: 600;
+      line-height: 1.18;
+      letter-spacing: -0.018em;
+    }
+
+    .publication-group-intro {
+      max-width: none;
+      margin: 10px 0 0;
+      color: var(--muted);
+      font-size: 0.92rem;
+      line-height: 1.58;
+    }
+
+    .publication-group .pub-list {
+      padding-left: 114px;
+    }
+
+    .pub-item {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) 200px;
+      justify-content: start;
+      gap: 24px;
+      align-items: start;
+      margin: 0;
+      padding: 0;
+      border-radius: 0;
+      background: transparent;
+      transition:
+        box-shadow 220ms var(--ease-out-quart),
+        background-color 220ms var(--ease-out-quart);
+    }
+
+    .pub-item + .pub-item {
+      margin-top: 22px;
+      padding-top: 22px;
+      border-top: 1px solid var(--rule);
+    }
+
+    .pub-title {
+      margin: 0 0 8px;
+      color: var(--text);
+      font-family: var(--font-serif);
+      font-size: 1.08rem;
+      line-height: 1.38;
+      font-weight: 600;
+    }
+
+    .pub-authors, .pub-venue-line {
+      margin: 0;
+      color: var(--muted);
+      font-size: 0.9375rem;
+      line-height: 1.5;
+    }
+
+    .pub-venue-badge,
+    .meta-label,
+    .journal-tag {
+      display: inline-flex;
+      align-items: center;
+      margin-top: 2px;
+      border: 0;
+      border-left: 2px solid var(--accent-2);
+      border-radius: 0;
+      background: transparent;
+      padding: 0 0 0 0.62em;
+      color: var(--muted);
+      font-family: var(--font-sans);
+      font-size: 0.76rem;
+      font-weight: 600;
+      line-height: 1.35;
+    }
+
+    .meta-label {
+      margin: 0 3px;
+      vertical-align: baseline;
+      white-space: nowrap;
+    }
+
+    .author-me {
+      color: var(--text);
+      font-weight: 600;
+    }
+
+    .corr-star {
+      color: var(--accent);
+      vertical-align: super;
+      font-size: 0.75em;
+    }
+
+    .pub-note {
+      margin: 0 0 24px;
+      color: var(--muted);
+      font-family: var(--font-sans);
+      font-size: 0.875rem;
+    }
+
+    .paper-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 12px;
+    }
+
+    .paper-link {
+      display: inline-flex;
+      align-items: center;
+      border-radius: 6px;
+      color: var(--accent);
+      font-family: var(--font-sans);
+      font-size: 0.875rem;
+      font-weight: 600;
+      text-decoration: none;
+      border-bottom: 1px solid color-mix(in srgb, var(--accent), transparent 54%);
+    }
+
+    .paper-link:hover { text-decoration: underline; }
+
+    .paper-thumb {
+      position: relative;
+      align-self: start;
+      display: block;
+      margin: 0;
+      width: 200px;
+      aspect-ratio: 16 / 10;
+      min-height: 0;
+      border: 1px solid var(--rule);
+      border-radius: 8px;
+      overflow: hidden;
+      background: #ffffff;
+      margin-left: 0;
+      box-shadow:
+        0 5px 16px color-mix(in srgb, var(--text), transparent 94%);
+    }
+
+    .paper-thumb img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      border-radius: 7px;
+      object-fit: contain;
+      filter: saturate(0.9) contrast(0.98);
+    }
+
+    .paper-thumb[data-empty="true"]::before {
+      content: attr(data-figure);
+      position: absolute;
+      inset: 0;
+      display: grid;
+      place-items: center;
+      min-height: 122px;
+      border-radius: 12px;
+      background: color-mix(in srgb, var(--surface-soft), transparent 10%);
+      color: var(--faint);
+      font-family: var(--font-sans);
+      font-size: 0.75rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      text-align: center;
+      padding: 8px;
+    }
+
+
+    .activities-grid {
+      display: grid;
+      gap: 18px;
+    }
+
+    .conference-theme {
+      min-width: 0;
+    }
+
+    .conference-theme-head {
+      margin-bottom: 18px;
+      padding-bottom: 15px;
+      border-bottom: 1px solid var(--rule);
+    }
+
+    .conference-theme-kicker {
+      display: block;
+      margin-bottom: 5px;
+      color: var(--accent);
+      font-family: var(--font-mono);
+      font-size: 0.68rem;
+      font-weight: 600;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+    }
+
+    .conference-theme-title {
+      margin: 0;
+      font-family: var(--font-serif);
+      font-size: 1.08rem;
+      font-weight: 600;
+      line-height: 1.28;
+    }
+
+    .conference-theme-intro {
+      max-width: 76ch;
+      margin: 4px 0 0;
+      color: var(--muted);
+      font-size: 0.84rem;
+      line-height: 1.42;
+    }
+
+    .event-type {
+      color: var(--accent);
+      font-family: var(--font-sans);
+      font-size: 0.75rem;
+      font-weight: 650;
+    }
+
+    .activity-group {
+      display: grid;
+      grid-template-columns: 124px minmax(0, 1fr);
+      gap: 18px;
+      align-items: start;
+      padding: 18px 0;
+    }
+
+    .activity-group:first-child {
+      padding-top: 0;
+    }
+
+    .activity-group + .activity-group {
+      border-top: 1px solid var(--rule);
+    }
+
+    .activity-group .group-title {
+      position: sticky;
+      top: 24px;
+    }
+
+    @media (max-width: 960px) {
+      .activity-group {
+        grid-template-columns: 1fr;
+        gap: 10px;
+      }
+
+      .activity-group .group-title {
+        position: static;
+      }
+    }
+
+
+    .journal-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      margin-top: 8px;
+    }
+
+    .journal-tag { margin-top: 0; font-style: italic; }
+
+    .footer {
+      margin-top: 48px;
+      padding-top: 24px;
+      border-top: 1px solid var(--rule);
+      color: var(--faint);
+      font-family: var(--font-sans);
+      font-size: 0.875rem;
+    }
+
+    @media (max-width: 960px) {
+      .layout { display: block; padding: 42px 22px; }
+      .side-nav {
+        position: static;
+        height: auto;
+        border-right: 0;
+        border-bottom: 1px solid var(--rule);
+        padding: 0 0 24px;
+        margin-bottom: 32px;
+      }
+      .nav-links {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 8px 16px;
+        border-top: 0;
+        margin-top: 24px;
+        padding-top: 0;
+      }
+      .nav-actions { margin-top: 24px; }
+      .nav-portrait { width: 92px; }
+      .experience-group {
+        grid-template-columns: 1fr;
+        gap: 10px;
+      }
+      .publication-group-head {
+        grid-template-columns: 80px minmax(0, 1fr);
+        gap: 18px;
+      }
+      .publication-group .pub-list { padding-left: 98px; }
+      .research-area { grid-template-columns: 1fr; gap: 7px; }
+      .group-title { position: static; }
+    }
+
+    @media (max-width: 640px) {
+      .nav-portrait { width: 84px; margin: 0 auto 14px; }
+      .publication-group-head {
+        grid-template-columns: 1fr;
+        gap: 12px;
+      }
+      .publication-group-head .group-title {
+        display: flex;
+        align-items: baseline;
+        gap: 8px;
+      }
+      .theme-index { font-size: 1.8rem; }
+      .publication-group-title { max-width: none; }
+      .publication-group .pub-list { padding-left: 0; }
+      .research-thread-head { display: block; }
+      .research-thread-note { margin-top: 4px; }
+      .research-lenses { grid-template-columns: 1fr; }
+      .research-lens { min-height: 0; }
+      .timeline li { grid-template-columns: 1fr; gap: 4px; }
+      .timeline li > .date,
+      .timeline li > div {
+        grid-column: 1;
+        grid-row: auto;
+        text-align: left;
+        justify-self: start;
+      }
+      .awards-list li,
+      .conference-list li {
+        grid-template-columns: 1fr;
+        gap: 2px;
+      }
+      .awards-list li > .date,
+      .conference-list li > .date {
+        grid-column: 1;
+        grid-row: 2;
+        text-align: left;
+        justify-self: start;
+      }
+      .conference-venues li {
+        grid-template-columns: 1fr;
+        gap: 1px;
+      }
+      .venue-date {
+        text-align: left;
+      }
+      .conference-topic-list .entry-title {
+        max-width: 100%;
+      }
+      .pub-item { grid-template-columns: 1fr; gap: 16px; }
+      .paper-thumb {
+        width: min(260px, 100%);
+        max-width: 260px;
+        margin-left: 0;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after {
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+      }
+    }
+    /* Removed custom skills tag styling for a cleaner layout */
+    /* Scroll progress bar styling
+       
+       The progress bar previously used a solid background with a `scaleX(0)` transform to
+       hide the bar when the page is at the top. Unfortunately, some browsers
+       would still render a faint outline or block when the bar had zero width,
+       which manifested as a small square in the top‑left corner. To avoid this
+       artifact entirely, the bar container is now fully transparent and the
+       fill is drawn via a `::before` pseudo‑element whose width is controlled
+       with a CSS custom property. When the progress value is zero, the
+       pseudo‑element simply has zero width, leaving no visible trace.
+    */
+    .progress {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 4px;
+      background: transparent;
+      pointer-events: none;
+      z-index: 200;
+      opacity: 0;
+      transition: opacity 0.2s var(--ease-out-quart);
+    }
+
+    .progress::before {
+      content: '';
+      display: block;
+      width: var(--progress-width, 0%);
+      height: 100%;
+      background: var(--accent);
+      border-radius: 0;
+    }
+
+    /* Back to top link */
+    .back-to-top {
+      display: block;
+      margin-top: 24px;
+      text-align: center;
+      font-family: var(--font-sans);
+      font-size: 0.825rem;
+      color: var(--accent);
+    }
+
+    .back-to-top:hover {
+      text-decoration: underline;
+    }
+
+    /* V17: restrained editorial system */
+    :root {
+      --bg: #f1f0ec;
+      --surface: #fbfaf7;
+      --surface-soft: #f4f1ea;
+      --text: #172231;
+      --muted: #59636e;
+      --faint: #899098;
+      --accent: #8a5b32;
+      --accent-2: #8a5b32;
+      --digital-accent: #2f6f9f;
+      --underline-accent: #c4926d;
+      --rule: #d9d6cf;
+      --rule-strong: #bbb8b1;
+      --callout-bg: #f3eee5;
+      --callout-border: #8a5b32;
+      --radius: 3px;
+      --font-serif: "Source Serif 4", Georgia, "Times New Roman", serif;
+      --font-sans: "Inter", "Helvetica Neue", Arial, sans-serif;
+      --font-mono: "Inter", "Helvetica Neue", Arial, sans-serif;
+      --page-width: 1270px;
+      --nav-width: 202px;
+      --content-width: 936px;
+    }
+
+    [data-theme="dark"] {
+      --bg: #10151b;
+      --surface: #171d24;
+      --surface-soft: #1d252e;
+      --text: #e8e6e1;
+      --muted: #abb1b7;
+      --faint: #777f88;
+      --accent: #d2a070;
+      --accent-2: #d2a070;
+      --digital-accent: #82b9df;
+      --underline-accent: #d8aa82;
+      --rule: #303841;
+      --rule-strong: #48515a;
+      --callout-bg: #211f1c;
+      --callout-border: #d2a070;
+    }
+
+    html { scroll-padding-top: 24px; }
+
+    body {
+      background: var(--bg);
+      font-family: var(--font-sans);
+      font-size: clamp(0.96rem, 0.93rem + 0.1vw, 1.015rem);
+      line-height: 1.68;
+      letter-spacing: -0.005em;
+    }
+
+    body::before { display: none; }
+
+    a {
+      text-decoration-thickness: 1px;
+      text-decoration-color: color-mix(in srgb, var(--accent), transparent 45%);
+    }
+
+    .layout {
+      grid-template-columns: var(--nav-width) minmax(0, var(--content-width));
+      gap: clamp(52px, 6vw, 88px);
+      padding: 62px 36px 92px;
+    }
+
+    .side-nav {
+      top: 42px;
+      height: calc(100vh - 84px);
+      border-right: 1px solid var(--rule);
+      padding-right: 30px;
+      font-family: var(--font-sans);
+    }
+
+    .nav-portrait {
+      width: 112px;
+      margin: 0 0 23px;
+      padding: 0;
+      border-radius: 2px;
+      box-shadow: 0 0 0 1px var(--rule-strong);
+    }
+
+    .nav-portrait img {
+      border-radius: 2px;
+      filter: saturate(0.82) contrast(1.02);
+    }
+
+    .brand-name {
+      font-size: clamp(1.3rem, 1.5vw, 1.5rem);
+      font-weight: 600;
+      line-height: 1.1;
+      letter-spacing: -0.02em;
+    }
+
+    .brand-meta {
+      display: block;
+      margin-top: 14px;
+      color: var(--muted);
+      font-family: var(--font-sans);
+      font-size: 0.9rem;
+      font-weight: 500;
+      line-height: 1.55;
+      letter-spacing: 0;
+    }
+
+    .brand-tag {
+      display: inline;
+      border: 0;
+      border-radius: 0;
+      background: transparent;
+      padding: 0;
+      color: var(--muted);
+      white-space: normal;
+    }
+
+    .brand-tag:not(:last-child)::after {
+      content: " · ";
+      color: var(--faint);
+      white-space: pre;
+    }
+
+    .brand-affiliation {
+      display: grid;
+      gap: 1px;
+      margin-top: 11px;
+      color: var(--text);
+      font-family: var(--font-sans);
+      font-size: 0.8rem;
+      font-weight: 600;
+      line-height: 1.45;
+      letter-spacing: 0;
+      text-transform: none;
+    }
+
+    .brand-institution {
+      color: var(--text);
+      font-weight: 600;
+    }
+
+    .nav-links {
+      gap: 0;
+      margin-top: 32px;
+      padding-top: 16px;
+    }
+
+    .nav-links a {
+      position: relative;
+      padding: 8px 10px;
+      border-radius: 5px;
+      font-family: var(--font-sans);
+      font-size: 0.9rem;
+      font-weight: 500;
+      letter-spacing: 0;
+      text-transform: none;
+    }
+
+    .nav-links a:hover {
+      background: color-mix(in srgb, var(--surface-soft), transparent 20%);
+    }
+
+    .nav-links a.is-active {
+      border-left: 0;
+      background: color-mix(in srgb, var(--accent), transparent 92%);
+      color: var(--accent);
+      font-weight: 600;
+    }
+
+    .nav-links a.is-active::before { display: none; }
+
+    .nav-actions {
+      gap: 13px;
+      font-family: var(--font-sans);
+      font-size: 0.8125rem;
+      letter-spacing: 0;
+      text-transform: none;
+    }
+
+    .theme-toggle {
+      border: 1px solid var(--rule-strong);
+      border-radius: 5px;
+      background: var(--surface);
+      padding: 7px 10px;
+      font-family: var(--font-sans);
+      font-size: 0.75rem;
+      font-weight: 600;
+      letter-spacing: 0.02em;
+      text-transform: none;
+    }
+
+    .theme-toggle:hover {
+      border-color: var(--accent);
+      background: color-mix(in srgb, var(--accent), transparent 94%);
+      color: var(--accent);
+    }
+
+    .content-section {
+      margin-top: 34px;
+      border-color: var(--rule);
+      border-radius: var(--radius);
+      background: var(--surface);
+      box-shadow: none;
+    }
+
+    .section-head {
+      border-bottom-color: var(--rule);
+      background: transparent;
+      padding: 18px clamp(28px, 4vw, 44px) 15px;
+    }
+
+    .section-title {
+      font-family: var(--font-sans);
+      font-size: 0.72rem;
+      font-weight: 600;
+      line-height: 1.2;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+    }
+
+    .section-title::after { display: none; }
+    .section-body { padding: clamp(30px, 4.5vw, 48px); }
+
+    .hero-intro {
+      margin-bottom: 31px;
+      padding-bottom: 31px;
+      border-bottom: 1px solid var(--rule);
+    }
+
+    .hero-overline {
+      margin: 0 0 16px;
+      color: var(--accent);
+      font-size: 0.68rem;
+      font-weight: 600;
+      line-height: 1.3;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+    }
+
+    .hero-title {
+      max-width: 790px;
+      margin: 0;
+      color: var(--text);
+      font-family: var(--font-serif);
+      font-size: clamp(2.05rem, 3.9vw, 3.25rem);
+      font-weight: 400;
+      line-height: 1.02;
+      letter-spacing: -0.045em;
+      text-wrap: balance;
+    }
+
+    .hero-title em {
+      color: var(--text);
+      font-style: italic;
+      font-weight: 400;
+    }
+
+    .hero-title .hero-digital {
+      color: var(--digital-accent);
+    }
+
+    .hero-title .hero-physical {
+      color: var(--accent);
+    }
+
+    .intro-text {
+      max-width: 78ch;
+      margin-top: 17px;
+      color: var(--muted);
+      font-family: var(--font-sans);
+      font-size: 0.94rem;
+      line-height: 1.72;
+      letter-spacing: -0.012em;
+    }
+
+    .profile-copy .intro-text:first-of-type { margin-top: 0; }
+
+    .intro-emphasis,
+    .profile-copy .intro-text:nth-of-type(2) .intro-emphasis {
+      color: var(--text);
+      font-weight: 500;
+      text-decoration-line: underline;
+      text-decoration-color: var(--underline-accent);
+      text-decoration-thickness: 2px;
+      text-underline-offset: 3px;
+      text-decoration-skip-ink: none;
+    }
+
+    .callout-box {
+      margin-top: 27px;
+      border: 0;
+      border-left: 2px solid var(--callout-border);
+      border-radius: 0;
+      background: var(--callout-bg);
+      padding: 15px 19px;
+      font-size: 0.86rem;
+      line-height: 1.58;
+    }
+
+    .callout-box strong {
+      color: var(--accent);
+      font-size: 0.7rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    .contact-strip {
+      gap: 22px;
+      margin-top: 31px;
+      padding-top: 21px;
+    }
+
+    .icon-link {
+      gap: 6px;
+      color: var(--muted);
+      font-family: var(--font-sans);
+      font-size: 0.82rem;
+      font-weight: 500;
+      letter-spacing: 0;
+    }
+
+    .icon-link svg { width: 14px; height: 14px; }
+
+    .sidebar-contact {
+      display: grid;
+      gap: 4px;
+      margin-top: 0;
+      border-top: 1px solid var(--rule);
+      padding-top: 14px;
+    }
+
+    .sidebar-contact .icon-link {
+      padding: 3px 0;
+      font-size: 0.82rem;
+    }
+
+    .experience-group {
+      grid-template-columns: 116px minmax(0, 1fr);
+      gap: 26px;
+      padding: 25px 0;
+    }
+
+    .group-title {
+      top: 28px;
+      color: var(--accent);
+      font-size: 0.67rem;
+      font-weight: 600;
+      letter-spacing: 0.11em;
+    }
+
+    .timeline { gap: 16px; }
+
+    .timeline li {
+      grid-template-columns: minmax(0, 1fr) 136px;
+      gap: 24px;
+    }
+
+    .timeline li + li {
+      padding-top: 16px;
+      border-top-color: var(--rule);
+    }
+
+    .date {
+      color: var(--faint);
+      font-size: 0.7rem;
+      font-weight: 500;
+      letter-spacing: 0.035em;
+    }
+
+    .entry-title {
+      font-family: var(--font-serif);
+      font-size: 1.04rem;
+      font-weight: 500;
+      line-height: 1.34;
+    }
+
+    .entry-meta {
+      margin-top: 4px;
+      font-size: 0.82rem;
+      line-height: 1.52;
+    }
+
+    /* Keep the dense award inventory compact and easy to scan. */
+    .awards-list {
+      gap: 2px;
+    }
+
+    .awards-list li {
+      padding-top: 3px;
+      padding-bottom: 3px;
+    }
+
+    .awards-list li + li {
+      padding-top: 3px;
+      border-top: 0;
+    }
+
+    .awards-list .entry-title {
+      font-size: 0.93rem;
+      line-height: 1.26;
+    }
+
+    .awards-list .entry-meta {
+      margin-top: 2px;
+      font-size: 0.78rem;
+      line-height: 1.4;
+    }
+
+    .awards-list .date {
+      font-size: 0.67rem;
+    }
+
+    .school-icon {
+      width: 17px;
+      height: 17px;
+      border-radius: 2px;
+      box-shadow: 0 0 0 1px var(--rule);
+      filter: saturate(0.7);
+    }
+
+    .publication-groups { gap: 34px; }
+
+    .publication-group + .publication-group {
+      padding-top: 34px;
+      border-top-color: var(--rule-strong);
+    }
+
+    .publication-group-head {
+      grid-template-columns: 76px minmax(0, 1fr);
+      gap: 25px;
+      margin-bottom: 30px;
+      padding-bottom: 28px;
+    }
+
+    .theme-index {
+      font-size: 2.8rem;
+      font-weight: 400;
+      line-height: 0.82;
+      letter-spacing: -0.055em;
+    }
+
+    .theme-label {
+      margin-top: 5px;
+      font-size: 0.57rem;
+      font-weight: 600;
+      letter-spacing: 0.1em;
+    }
+
+    .publication-group-title {
+      font-size: clamp(1.55rem, 3vw, 2.05rem);
+      font-weight: 500;
+      line-height: 1.12;
+      letter-spacing: -0.032em;
+      text-wrap: balance;
+    }
+
+    .publication-group-intro {
+      margin-top: 18px;
+      border-left: 2px solid var(--accent);
+      background: color-mix(in srgb, var(--surface-soft), transparent 18%);
+      padding: 13px 16px 14px;
+      color: var(--text);
+      font-family: var(--font-sans);
+      font-size: 0.9rem;
+      line-height: 1.66;
+      letter-spacing: -0.01em;
+    }
+
+    .publication-group-intro::before {
+      content: "Research focus";
+      display: block;
+      margin-bottom: 6px;
+      color: var(--accent);
+      font-size: 0.62rem;
+      font-weight: 600;
+      line-height: 1.2;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+    }
+
+    .publication-group .pub-list { padding-left: 101px; }
+
+    .pub-item {
+      grid-template-columns: minmax(0, 1fr) 188px;
+      gap: 30px;
+    }
+
+    .pub-item + .pub-item {
+      margin-top: 27px;
+      padding-top: 27px;
+    }
+
+    .pub-title {
+      margin-bottom: 9px;
+      font-size: 1.08rem;
+      font-weight: 500;
+      line-height: 1.43;
+    }
+
+    .pub-authors,
+    .pub-venue-line {
+      font-size: 0.82rem;
+      line-height: 1.58;
+    }
+
+    .author-me { color: var(--text); font-weight: 600; }
+
+    .pub-venue-badge,
+    .meta-label,
+    .journal-tag {
+      margin-top: 7px;
+      border-left: 1px solid var(--accent);
+      padding-left: 0.7em;
+      font-size: 0.68rem;
+      font-weight: 500;
+      letter-spacing: 0.02em;
+    }
+
+    .pub-venue-badge {
+      font-size: 0.82rem;
+      font-weight: 400;
+      line-height: 1.58;
+      letter-spacing: 0;
+    }
+
+    .paper-links { margin-top: 13px; }
+
+    .paper-link {
+      border-radius: 0;
+      font-size: 0.72rem;
+      font-weight: 500;
+      letter-spacing: 0.03em;
+    }
+
+    .paper-thumb {
+      width: 188px;
+      border-radius: 2px;
+      box-shadow: 0 4px 14px color-mix(in srgb, var(--text), transparent 94%);
+    }
+
+    .paper-thumb img {
+      border-radius: 1px;
+      filter: saturate(0.72) contrast(1.02);
+      transition: filter 260ms var(--ease-out-quart);
+    }
+
+    .pub-item:hover .paper-thumb img { filter: saturate(0.95) contrast(1.02); }
+
+    .pub-note {
+      margin-bottom: 29px;
+      font-size: 0.71rem;
+      letter-spacing: 0.04em;
+    }
+
+    .footer {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      flex-wrap: wrap;
+      border-top: 1px solid var(--rule);
+      padding: 23px 2px 0;
+      color: var(--faint);
+      font-size: 0.69rem;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+    }
+
+    .footer p { margin: 0; }
+
+    .footer .theme-toggle {
+      border: 0;
+      border-radius: 0;
+      background: transparent;
+      padding: 0;
+      color: var(--faint);
+      font-family: var(--font-sans);
+      font-size: inherit;
+      font-weight: 500;
+      letter-spacing: inherit;
+      text-transform: uppercase;
+      opacity: 0.72;
+    }
+
+    .footer .theme-toggle:hover {
+      background: transparent;
+      color: var(--accent);
+      opacity: 1;
+    }
+
+    .footer .back-to-top {
+      margin: 0;
+      color: var(--faint);
+      font-size: inherit;
+    }
+    .progress { height: 2px; }
+
+    @media (max-width: 960px) {
+      .layout { display: block; padding: 38px 24px 72px; }
+
+      .side-nav {
+        position: relative;
+        top: auto;
+        height: auto;
+        display: grid;
+        grid-template-columns: minmax(0, 1fr) auto;
+        gap: 20px;
+        margin-bottom: 34px;
+        border-right: 0;
+        border-bottom: 1px solid var(--rule);
+        padding: 0 0 26px;
+      }
+
+      .nav-brand {
+        display: grid;
+        grid-template-columns: 72px minmax(0, 1fr);
+        column-gap: 18px;
+        align-items: start;
+      }
+
+      .nav-portrait {
+        grid-column: 1;
+        grid-row: 1 / span 3;
+        width: 72px;
+        margin: 0;
+      }
+
+      .brand-name,
+      .brand-meta,
+      .brand-affiliation { grid-column: 2; }
+
+      .brand-name { font-size: 1.45rem; }
+      .brand-meta { margin-top: 7px; }
+      .brand-affiliation { margin-top: 6px; }
+
+      .nav-links {
+        flex-direction: row;
+        gap: 22px;
+        margin-top: 22px;
+        border-top: 0;
+        padding-top: 0;
+      }
+
+      .nav-links a { padding: 6px 9px; }
+      .nav-links a.is-active::before { display: none; }
+      .nav-links a.is-active { color: var(--accent); }
+
+      .sidebar-contact {
+        display: flex;
+        flex-direction: row;
+        gap: 18px;
+        margin-top: 13px;
+        border-top: 0;
+        padding-top: 0;
+      }
+
+      .nav-actions {
+        grid-column: 1 / -1;
+        flex-direction: row;
+        align-items: flex-end;
+        justify-content: space-between;
+        margin-top: 2px;
+      }
+
+      .nav-actions > span { display: none; }
+      .experience-group { grid-template-columns: 106px minmax(0, 1fr); }
+      .publication-group .pub-list { padding-left: 0; }
+    }
+
+    @media (max-width: 640px) {
+      .layout { padding: 24px 14px 54px; }
+
+      .side-nav {
+        display: block;
+        margin-bottom: 22px;
+        padding-bottom: 18px;
+      }
+
+      .nav-actions {
+        position: static;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
+        margin-top: 18px;
+      }
+
+      .nav-brand { padding-right: 76px; }
+      .nav-links { gap: 18px; margin-top: 18px; }
+      .sidebar-contact { flex-wrap: wrap; gap: 8px 16px; }
+
+      .content-section { margin-top: 18px; }
+      .section-head { padding: 15px 20px 13px; }
+      .section-body { padding: 27px 20px 30px; }
+
+      .hero-intro { margin-bottom: 25px; padding-bottom: 25px; }
+      .hero-title { font-size: clamp(1.9rem, 8.5vw, 2.45rem); }
+      .contact-strip { gap: 14px 20px; }
+
+      .experience-group {
+        grid-template-columns: 1fr;
+        gap: 12px;
+        padding: 23px 0;
+      }
+
+      .timeline li { grid-template-columns: 1fr; gap: 5px; }
+      .timeline li > div,
+      .timeline li > .date {
+        grid-column: 1;
+        grid-row: auto;
+        justify-self: start;
+        text-align: left;
+      }
+
+      .awards-list li { grid-template-columns: 1fr; }
+
+      .publication-group-head {
+        grid-template-columns: 52px minmax(0, 1fr);
+        gap: 17px;
+      }
+
+      .theme-index { font-size: 2.15rem; }
+      .publication-group-title { font-size: 1.43rem; }
+      .pub-item { grid-template-columns: 1fr; gap: 17px; }
+      .paper-thumb { width: min(250px, 100%); }
+    }
+
+  </style>
+</head>
+<body id="top">
+  <!-- Scroll progress bar for long pages -->
+  <div class="progress" id="reading-progress" aria-hidden="true"></div>
+<a class="skip-link" href="#main">Skip to main content</a>
+<div class="layout">
+<aside aria-label="Vertical site navigation" class="side-nav">
+<div>
+<a aria-label="Back to about" class="nav-brand" href="#about">
+<span class="nav-portrait"><img alt="Portrait of Yushu Xu" onerror="this.remove();" src="portrait.JPG"/></span>
+<span class="brand-name">Yushu Xu</span>
+<span class="brand-affiliation"><span>Master’s Student</span><span class="brand-institution">Peking University</span></span>
+<span aria-label="Research areas" class="brand-meta"><span class="brand-tag">GIScience</span><span class="brand-tag">Digital Geographies</span><span class="brand-tag">Urban AI</span></span>
+</a>
+<nav aria-label="Primary navigation" class="nav-links">
+<a href="#about">About</a>
+<a href="#research">Research</a>
+<a href="#experience">Experience</a>
+</nav>
+</div>
+<div class="nav-actions">
+<nav aria-label="Contact links" class="contact-strip sidebar-contact">
+<a class="icon-link" href="mailto:xuyushu@stu.pku.edu.cn">
+<svg aria-hidden="true" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24"><rect height="16" rx="2" width="20" x="2" y="4"></rect><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path></svg>
+Email
+</a>
+<a aria-label="Google Scholar profile" class="icon-link" href="https://scholar.google.com/citations?hl=zh-CN&amp;user=qJTbbKkAAAAJ" rel="noopener" target="_blank">
+<svg aria-hidden="true" fill="currentColor" viewbox="0 0 24 24"><path d="M5.242 13.769L0 9.5 12 0l12 9.5-5.242 4.269C17.548 11.249 14.978 9.5 12 9.5c-2.977 0-5.548 1.748-6.758 4.269zM12 10a7 7 0 1 0 0 14 7 7 0 0 0 0-14z"></path></svg>
+Google Scholar
+</a>
+<a aria-label="LinkedIn profile" class="icon-link" href="https://www.linkedin.com/in/yushu-xu-751778384/" rel="noopener" target="_blank">
+<svg aria-hidden="true" fill="currentColor" viewbox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"></path></svg>
+LinkedIn
+</a>
+</nav>
+</div>
+</aside>
+<main id="main">
+<section aria-labelledby="about-title" class="content-section" id="about">
+<div class="section-head">
+<h2 class="section-title" id="about-title">About</h2>
+</div>
+<div class="section-body">
+<div class="profile-copy">
+<header class="hero-intro">
+<h1 class="hero-title">Understanding cities across <em><span class="hero-physical">physical</span> and <span class="hero-digital">digital</span> space.</em></h1>
+</header>
+<p class="intro-text">
+                I am <strong class="intro-emphasis">a master’s student</strong> at the School of Urban Planning and Design, <strong class="intro-emphasis">Peking University</strong>. My research lies at the intersection of <strong class="intro-emphasis">GIScience, Digital Geographies, and Urban AI</strong>, with a broader interest in understanding how human activities are organized, represented, and transformed across physical and digital spaces.
+              </p>
+<p class="intro-text">
+                My work focuses on <strong class="intro-emphasis">human mobility and travel behavior</strong>, particularly the relationships between online behavior and corresponding activities in physical space. More recently, I have extended this research to Urban AI, with a particular focus on <strong class="intro-emphasis">generative AI and large language models</strong>. I examine how LLMs understand and represent cities, how they may influence people’s spatial perceptions, decisions, and real-world urban behavior, and how they can serve as analytical tools for interpreting urban data and predicting urban dynamics.
+              </p>
+    <!-- Core Expertise section removed as per user request -->
+            </div>
+</div>
+</section>
+<section aria-labelledby="experience-title" class="content-section" id="experience">
+<div class="section-head">
+<h2 class="section-title" id="experience-title">Experience</h2>
+</div>
+<div class="section-body">
+<div class="experience-grid">
+<div class="experience-group">
+<p class="group-title">Education</p>
+<ul class="timeline">
+<li>
+<span class="date">Sept 2024 – Present</span>
+<div>
+<p class="entry-title"><span class="institution-title"><img alt="Peking University icon" class="school-icon" loading="lazy" onerror="this.remove();" src="https://www.google.com/s2/favicons?sz=64&amp;domain=www.pku.edu.cn"/>Peking University, China</span></p>
+<p class="entry-meta">Master in Territorial Spatial Planning, Smart Cities and Big Data</p>
+</div>
+</li>
+<li>
+<span class="date">Sept 2020 – Jul 2024</span>
+<div>
+<p class="entry-title"><span class="institution-title"><img alt="Nanjing Normal University icon" class="school-icon" loading="lazy" onerror="this.remove();" src="https://www.google.com/s2/favicons?sz=64&amp;domain=www.njnu.edu.cn"/>Nanjing Normal University, China</span></p>
+<p class="entry-meta">Bachelor in Geographic Information Science</p>
+</div>
+</li>
+</ul>
+</div>
+<div class="experience-group">
+<p class="group-title">Research</p>
+<ul class="timeline">
+<li>
+<span class="date">May 2026 – Present</span>
+<div>
+<p class="entry-title"><span class="institution-title"><img alt="MIT icon" class="school-icon" loading="lazy" onerror="this.remove();" src="https://www.google.com/s2/favicons?sz=64&amp;domain=www.mit.edu"/>MIT-UF-NU Joint Summer Research, USA</span></p>
+<p class="entry-meta">Research Intern</p>
+<p class="entry-meta">Project: Bias in LLMs’ Urban Representations</p>
+</div>
+</li>
+</ul>
+</div>
+<div class="experience-group">
+<p class="group-title">Selected Awards</p>
+<ul class="timeline awards-list">
+<li>
+<span class="date">Sept 2025</span>
+<div>
+<p class="entry-title">National Scholarship, <span class="award-inline">Peking University</span></p>
+</div>
+</li>
+<li>
+<span class="date">Sept 2025</span>
+<div>
+<p class="entry-title">Merit Student, <span class="award-inline">Peking University</span></p>
+</div>
+</li>
+<li>
+<span class="date">Jun 2024</span>
+<div>
+<p class="entry-title">Distinguished Graduate Award, <span class="award-inline">Nanjing Normal University</span></p>
+</div>
+</li>
+<li>
+<span class="date">Oct 2024</span>
+<div>
+<p class="entry-title">Outstanding Undergraduate Thesis of Jiangsu Province</p>
+</div>
+</li>
+<li>
+<span class="date">May 2024</span>
+<div>
+<p class="entry-title">Merit Student of Jiangsu Province</p>
+</div>
+</li>
+<li>
+<span class="date">May 2024</span>
+<div>
+<p class="entry-title">Top 10 Outstanding Young Students Award, <span class="award-inline">Nanjing Normal University</span></p>
+</div>
+</li>
+<li>
+<span class="date">Dec 2023</span>
+<div>
+<p class="entry-title">National Scholarship, <span class="award-inline">Nanjing Normal University</span></p>
+</div>
+</li>
+<li>
+<span class="date">Dec 2022</span>
+<div>
+<p class="entry-title">President’s Special Scholarship, <span class="award-inline">Nanjing Normal University</span></p>
+</div>
+</li>
+<li>
+<span class="date">Nov 2022</span>
+<div>
+<p class="entry-title">Grand Prize, National College Students’ GIS Application Skills Competition</p>
+</div>
+</li>
+<li>
+<span class="date">Sept 2022</span>
+<div>
+<p class="entry-title">First Prize, Esri-Cup Chinese College Students GIS Software Contest, <span class="award-inline">Team leader</span></p>
+<p class="entry-meta award-project">Project: <a href="https://mp.weixin.qq.com/s/NzsIfdgrAQbb_5wr52wDcg" rel="noopener" target="_blank">Agent-based multi-scenario spatiotemporal simulation and prediction of population dynamics in China</a>.</p>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+<section aria-labelledby="research-title" class="content-section" id="research">
+<div class="section-head">
+<h2 class="section-title" id="research-title">Research</h2>
+</div>
+<div class="section-body">
+<p class="pub-note"><span class="corr-star">*</span> Corresponding author</p>
+<div class="publication-groups">
+<section class="publication-group" aria-labelledby="pub-theme-mobility">
+<div class="publication-group-head">
+<p class="group-title"><span class="theme-index">01</span><span class="theme-label">Research theme</span></p>
+<div>
+<h3 class="publication-group-title" id="pub-theme-mobility">GIScience, Spatial Interaction, and Travel Behavior</h3>
+<p class="publication-group-intro">I investigate how people move across cities and how these dynamic flows collectively shape intercity relations. I develop spatiotemporal flow network analysis methods and regional diffusion process models to identify spatiotemporal patterns in human mobility flows and structural dynamics in intercity networks, and examine how individual and contextual factors influence travel behavior.</p>
+</div>
+</div>
+<ol class="pub-list">
+<li class="pub-item">
+<div>
+<p class="pub-title">When connection is not closeness: Revealing experienced time–space compression and expansion through multimodal intercity mobility flows in China</p>
+<p class="pub-authors"><span class="author-me">Yushu Xu</span>, Zhaoya Gong<span class="corr-star">*</span>, Jean-Claude Thill, Bin Liu, Pengjun Zhao</p>
+<span class="pub-venue-badge">Under review, 2026</span>
+</div>
+<figure class="paper-thumb">
+<img alt="Mobility-flow figure from the time–space compression and expansion study" decoding="async" loading="lazy" src="fig-aag-connection-closeness.jpg"/>
+</figure>
+</li>
+<li class="pub-item">
+<div>
+<p class="pub-title">Spatially explicit individual-based modeling of regional cultural evolution through mobility</p>
+<p class="pub-authors">Tianyao Fang, Haiping Zhang<span class="corr-star">*</span>, <span class="author-me">Yushu Xu</span>, Zihan Li, Xiang Li</p>
+<span class="pub-venue-badge">Under review, 2026</span>
+</div>
+<figure class="paper-thumb">
+<img alt="Regional cultural evolution simulation figure" decoding="async" loading="lazy" src="fig-girs-culture-simulation.jpg"/>
+</figure>
+</li>
+<li class="pub-item">
+<div>
+<p class="pub-title">How does cultural distance affect tourism destination choice? Evidence from the correlation between regional culture and tourism flow</p>
+<p class="pub-authors">Zihan Li, Haiping Zhang<span class="corr-star">*</span>, <span class="author-me">Yushu Xu</span>, Tianyao Fang, Haoran Wang, Guo’an Tang</p>
+<span class="pub-venue-badge"><em>Applied Geography</em>, 2024</span>
+<div class="paper-links">
+<a class="paper-link" href="https://www.sciencedirect.com/science/article/pii/S0143622824000663" rel="noopener" target="_blank">Original article ↗</a>
+</div>
+</div>
+<figure class="paper-thumb">
+<img alt="Figure from the Applied Geography tourism-flow study" decoding="async" loading="lazy" src="fig-applied-geography-2024.jpg"/>
+</figure>
+</li>
+<li class="pub-item">
+<div>
+<p class="pub-title">An approach for exploring spatial associations in multi-layer networks based on convergent and divergent flow structures</p>
+<p class="pub-authors">Haiping Zhang, Xingxing Zhou<span class="corr-star">*</span>, Zitong Li, <span class="author-me">Yushu Xu</span>, Yu Yang, Guo’an Tang</p>
+<span class="pub-venue-badge"><em>International Journal of Digital Earth</em>, 2024</span>
+<div class="paper-links">
+<a class="paper-link" href="https://www.tandfonline.com/doi/full/10.1080/17538947.2024.2436478" rel="noopener" target="_blank">Original article ↗</a>
+</div>
+</div>
+<figure class="paper-thumb">
+<img alt="Figure from the multi-layer spatial network study" decoding="async" loading="lazy" src="fig-ijde-2024.jpg"/>
+</figure>
+</li>
+</ol>
+</section>
+
+<section class="publication-group" aria-labelledby="pub-theme-digital">
+<div class="publication-group-head">
+<p class="group-title"><span class="theme-index">02</span><span class="theme-label">Research theme</span></p>
+<div>
+<h3 class="publication-group-title" id="pub-theme-digital">Digital Geographies and Urban AI</h3>
+<p class="publication-group-intro">As digitalization deepens, urban activities increasingly extend from physical space into virtual space. I investigate how online and offline activities interact with and influence one another, and how these interactions collectively reshape urban mobility patterns and intercity relations. Focusing on generative AI, I examine systematic biases in how large language models understand urban activity spaces and how these technologies may further influence urban perception and mobility behavior.</p>
+</div>
+</div>
+<ol class="pub-list">
+<li class="pub-item">
+<div>
+<p class="pub-title">Intercity human dynamics during holidays through the lens of travel movement–intention interactions in the hybrid physical–virtual space</p>
+<p class="pub-authors"><span class="author-me">Yushu Xu</span>, Zhaoya Gong<span class="corr-star">*</span>, Tianyao Fang, Haiping Zhang, Guo’an Tang</p>
+<span class="pub-venue-badge"><em>International Journal of Geographical Information Science</em>, 2025</span>
+<div class="paper-links">
+<a class="paper-link" href="https://www.tandfonline.com/doi/full/10.1080/13658816.2025.2515200" rel="noopener" target="_blank">Original article ↗</a>
+</div>
+</div>
+<figure class="paper-thumb">
+<img alt="Figure from the physical–virtual holiday mobility study" decoding="async" loading="lazy" src="fig-ijgis-2025.jpg"/>
+</figure>
+</li>
+<li class="pub-item">
+<div>
+<p class="pub-title">Integration of migration and attention flow data to reveal association of virtual–real dual intercity network structure</p>
+<p class="pub-authors"><span class="author-me">Yushu Xu</span>, Haiping Zhang<span class="corr-star">*</span>, Zihan Li, Haoran Wang, Lei Zhou, Ziye Bao, Guo’an Tang</p>
+<span class="pub-venue-badge"><em>Cities</em>, 2023</span>
+<div class="paper-links">
+<a class="paper-link" href="https://www.sciencedirect.com/science/article/abs/pii/S0264275123004262" rel="noopener" target="_blank">Original article ↗</a>
+</div>
+</div>
+<figure class="paper-thumb">
+<img alt="Figure from the virtual–real intercity network study" decoding="async" loading="lazy" src="fig-cities-2023.jpg"/>
+</figure>
+</li>
+</ol>
+</section>
+</div>
+</div>
+</section>
+<footer class="footer">
+<p>Last updated: Aug 2026</p>
+<button aria-label="Toggle color theme" class="theme-toggle" type="button">Theme: Light</button>
+  <a href="#top" class="back-to-top">Back to top</a>
+</footer>
+</main>
+</div>
+<script>
+    // Keep the document order aligned with the visible academic narrative.
+    const researchSection = document.getElementById('research');
+    const experienceSection = document.getElementById('experience');
+    if (researchSection && experienceSection) {
+      researchSection.after(experienceSection);
+    }
+
+    const root = document.documentElement;
+    const toggle = document.querySelector('.theme-toggle');
+    const savedTheme = localStorage.getItem('theme');
+    const preferredTheme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+
+    function applyTheme(theme) {
+      root.dataset.theme = theme;
+      toggle.textContent = theme === 'dark' ? 'Theme: Light' : 'Theme: Dark';
+      toggle.setAttribute('aria-pressed', theme === 'dark' ? 'true' : 'false');
+    }
+
+    applyTheme(savedTheme || preferredTheme);
+
+    toggle.addEventListener('click', () => {
+      const nextTheme = root.dataset.theme === 'dark' ? 'light' : 'dark';
+      localStorage.setItem('theme', nextTheme);
+      applyTheme(nextTheme);
+    });
+
+    // Scroll progress bar logic
+    //
+    // The progress bar fill is controlled via a CSS custom property that
+    // defines the width of the pseudo‑element. We also toggle the bar's
+    // opacity so it fades in only once the user has scrolled away from the top.
+    const progressBar = document.getElementById('reading-progress');
+    document.addEventListener('scroll', () => {
+      const totalHeight = document.body.scrollHeight - window.innerHeight;
+      let ratio = 0;
+      if (totalHeight > 0) {
+        ratio = Math.min(1, Math.max(0, window.scrollY / totalHeight));
+      }
+      // Set the CSS variable for the progress bar width on the element's inline style.
+      progressBar.style.setProperty('--progress-width', `${ratio * 100}%`);
+      // Fade the bar in only when there is some progress.
+      progressBar.style.opacity = ratio > 0 ? '1' : '0';
+    });
+
+    const navLinks = Array.from(document.querySelectorAll('.nav-links a[href^="#"]'));
+    const sections = navLinks
+      .map(link => document.querySelector(link.getAttribute('href')))
+      .filter(Boolean);
+
+    function setActiveNav(id) {
+      navLinks.forEach(link => {
+        const active = link.getAttribute('href') === `#${id}`;
+        link.classList.toggle('is-active', active);
+        if (active) {
+          link.setAttribute('aria-current', 'true');
+        } else {
+          link.removeAttribute('aria-current');
+        }
+      });
+    }
+
+    const observer = new IntersectionObserver((entries) => {
+      const visible = entries
+        .filter(entry => entry.isIntersecting)
+        .sort((a, b) => b.intersectionRatio - a.intersectionRatio)[0];
+
+      if (visible?.target?.id) {
+        setActiveNav(visible.target.id);
+      }
+    }, {
+      root: null,
+      rootMargin: '-26% 0px -58% 0px',
+      threshold: [0.01, 0.18, 0.36]
+    });
+
+    sections.forEach(section => observer.observe(section));
+    if (sections[0]) setActiveNav(sections[0].id);
+
+    // Conference map initialization removed; static image used instead
+  </script>
+</body>
+</html>
