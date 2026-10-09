@@ -1,0 +1,5 @@
+# Allow crawling so search engines can read the noindex meta tag in each HTML page.
+# Blocking the HTML here could leave its URL in search results.
+# This file does not provide access control.
+User-agent: *
+Allow: /
